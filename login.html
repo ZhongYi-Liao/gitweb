@@ -9,6 +9,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Login</title>
+    <script>
+    $(document).ready(function(){
+        $("#btnLogin").click(function (){
+          $("#txtUsername").focus();
+          let username=$("#txtUsername").val();
+          let password=$("#txtPassword").val();
+          if(username =="user" && password == "1234"){
+              alert("ok");
+          }
+          else{
+              alert("fail");
+          }
+        });
+          $("#btnReset").click(function (){
+          $("#txtUsername").val("");
+          $("#txtPassword").val("");
+          $("#txtUsername").focus();
+        });
+    });
+    
+    </script>
 </head>
 <body>
     <div class="container">
