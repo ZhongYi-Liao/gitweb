@@ -8,28 +8,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <title>Login</title>
-    <script>
-    $(document).ready(function(){
-        $("#btnLogin").click(function (){
-          $("#txtUsername").focus();
-          let username=$("#txtUsername").val();
-          let password=$("#txtPassword").val();
-          if(username =="user" && password == "1234"){
-              alert("ok");
-          }
-          else{
-              alert("fail");
-          }
-        });
-          $("#btnReset").click(function (){
-          $("#txtUsername").val("");
-          $("#txtPassword").val("");
-          $("#txtUsername").focus();
-        });
-    });
+    <style>
+    #address{
+        text-align: center;
+    }
+    </style>
     
-    </script>
+    <title>About</title>
+
 </head>
 <body>
         <nav class="navbar navbar-expand navbar-dark bg-dark">
@@ -39,12 +25,16 @@
                     <a class="nav-item nav-link active" href="about.html">About</a>
                 </div>
         </nav>
-    <div class="container">
-        <input type="text" id="txtUsername" class="form-control my-2" placeholder="Username">
-        <input type="text" id="txtPassword" class="form-control mb-2" placeholder="Password">
-        <button id="btnLogin" class="btn btn-primary">Log in</button>
-        <button id="btnReset" class="btn btn-secondary">Reset</button>
-    
-    </div>
+
+        <div class="container">
+            <div class="card mx-auto m-3 shadow" style="width:200px">
+                <img class="card-img-top" src="turkey.png" alt="food">
+                <div class="card-body">
+                    <h4 class="card-title">Food</h4>
+                    <p class="card-text">Turkey</p>
+                </div>
+            </div>
+        </div>
+        <p id="address"><strong>Contact Address:</strong> 333 Moo 1 Tasud Chiang Rai,Thailand</p>
 </body>
 </html>
